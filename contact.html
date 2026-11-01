@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | Opal Horizon</title>
+
+    <meta name="description"
+          content="Contact Opal Horizon with questions, feedback or general enquiries.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main class="form-page">
+
+    <h1>Contact Opal Horizon</h1>
+
+    <p>
+        Have a question or need assistance?
+        Send us a message using the form below.
+    </p>
+
+    <form id="contactForm">
+
+        <label for="contactName">Full Name:</label>
+        <input type="text" id="contactName"
+               name="name" required minlength="2">
+
+        <label for="contactEmail">Email Address:</label>
+        <input type="email" id="contactEmail"
+               name="email" required>
+
+        <label for="contactPhone">Phone Number:</label>
+        <input type="tel" id="contactPhone"
+               name="phone"
+               placeholder="Optional">
+
+        <label for="messageType">Type of Message:</label>
+        <select id="messageType" name="messageType" required>
+            <option value="">Select a message type</option>
+            <option value="General Question">General Question</option>
+            <option value="Feedback">Feedback</option>
+            <option value="Booking Support">Booking Support</option>
+            <option value="Complaint">Complaint</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label for="contactMessage">Your Message:</label>
+        <textarea id="contactMessage"
+                  name="message"
+                  rows="6"
+                  required
+                  minlength="10"
+                  placeholder="Write your message here..."></textarea>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+    <div id="contactResponse"
+         class="form-response"
+         aria-live="polite"></div>
+
+</main>
+
+<script src="forms.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,347 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Opal Horizon | Find Your Perfect Stay</title>
+
+    <meta name="description"
+          content="Discover and compare hotels across South Africa with Opal Horizon.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container header-content">
+        <a href="index.html" class="logo">
+            <span class="logo-symbol">◇</span>
+            <span>Opal <strong>Horizon</strong></span>
+        </a>
+
+        <button type="button" id="menuToggle"
+                class="menu-toggle"
+                aria-expanded="false"
+                aria-label="Open navigation menu">
+            ☰
+        </button>
+
+        <nav id="mainNav" class="main-nav"
+             aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#hotels">Hotels</a>
+            <a href="#about">About Us</a>
+            <a href="#features">Why Us</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact Page</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <section id="home" class="hero-section">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="small-heading">
+                    WELCOME TO OPAL HORIZON
+                </p>
+
+                <h1>Find Your Perfect Stay</h1>
+
+                <p>
+                    Explore beautiful destinations,
+                    compare hotels and discover
+                    comfortable accommodation
+                    across South Africa.
+                </p>
+
+                <a href="#hotels" class="main-button">
+                    Explore Hotels
+                </a>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1000&q=80"
+                    alt="Beautiful hotel swimming pool">
+            </div>
+        </div>
+    </section>
+
+    <section id="hotels" class="hotels-section">
+        <div class="container">
+            <div class="section-title">
+                <p class="small-heading">
+                    EXPLORE OUR HOTELS
+                </p>
+                <h2>Featured Hotels</h2>
+                <p>
+                    Browse nine sample hotels
+                    across South Africa.
+                </p>
+            </div>
+
+            <div class="hotel-controls">
+                <input type="search"
+                       id="hotelSearch"
+                       placeholder="Search by hotel or city"
+                       aria-label="Search hotels">
+
+                <select id="priceFilter"
+                        aria-label="Filter by price">
+                    <option value="all">All Prices</option>
+                    <option value="1000">Under R1,000</option>
+                    <option value="1500">Under R1,500</option>
+                    <option value="2000">Under R2,000</option>
+                </select>
+
+                <select id="sortHotels"
+                        aria-label="Sort hotels">
+                    <option value="featured">
+                        Featured
+                    </option>
+                    <option value="price-low">
+                        Price: Low to High
+                    </option>
+                    <option value="price-high">
+                        Price: High to Low
+                    </option>
+                    <option value="rating">
+                        Highest Rated
+                    </option>
+                    <option value="name">
+                        Name: A to Z
+                    </option>
+                </select>
+
+                <button type="button" id="clearSearch">
+                    Clear Filters
+                </button>
+            </div>
+
+            <p id="resultsCount"
+               aria-live="polite"></p>
+
+            <div id="hotelGrid" class="hotel-grid">
+            </div>
+
+            <p id="emptyState" hidden>
+                No hotels match your search.
+            </p>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Opal Horizon</h2>
+                <p>
+                    Opal Horizon is a student-created
+                    hotel discovery website designed
+                    to help travellers explore and
+                    compare accommodation options.
+                </p>
+            </div>
+
+            <div class="tabs">
+                <button type="button"
+                        class="tab-button active"
+                        data-tab="discover"
+                        aria-selected="true">
+                    Discover
+                </button>
+
+                <button type="button"
+                        class="tab-button"
+                        data-tab="compare"
+                        aria-selected="false">
+                    Compare
+                </button>
+
+                <button type="button"
+                        class="tab-button"
+                        data-tab="explore"
+                        aria-selected="false">
+                    Explore
+                </button>
+            </div>
+
+            <div id="tabPanel" class="tab-panel">
+                <h3>Discover places to stay</h3>
+                <p>
+                    Browse a selection of sample
+                    hotels and explore their
+                    locations, prices and ratings.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Opal Horizon?</h2>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-box">
+                    <h3>Easy Search</h3>
+                    <p>Find hotels by name or city.</p>
+                </div>
+
+                <div class="feature-box">
+                    <h3>Compare Prices</h3>
+                    <p>View sample nightly rates.</p>
+                </div>
+
+                <div class="feature-box">
+                    <h3>Explore Locations</h3>
+                    <p>Discover hotel areas using maps.</p>
+                </div>
+
+                <div class="feature-box">
+                    <h3>Simple Enquiries</h3>
+                    <p>Estimate the cost of your stay.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Hotel Gallery</h2>
+                <p>Explore our accommodation inspiration.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <button type="button" class="gallery-item"
+                    data-full="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200"
+                    data-alt="Luxury hotel swimming pool">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=500"
+                         alt="Luxury hotel swimming pool">
+                </button>
+
+                <button type="button" class="gallery-item"
+                    data-full="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200"
+                    data-alt="Beautiful hotel exterior">
+                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=500"
+                         alt="Beautiful hotel exterior">
+                </button>
+
+                <button type="button" class="gallery-item"
+                    data-full="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1200"
+                    data-alt="Resort swimming pool">
+                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=500"
+                         alt="Resort swimming pool">
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+
+            <div class="faq-item">
+                <h3>
+                    <button type="button"
+                            class="accordion-trigger"
+                            aria-expanded="false">
+                        Can I book a hotel directly?
+                    </button>
+                </h3>
+                <div class="accordion-panel" hidden>
+                    <p>
+                        Yes, you can dicectly contact Opal or the hotel itself to directly book your stay
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <h3>
+                    <button type="button"
+                            class="accordion-trigger"
+                            aria-expanded="false">
+                        Are the prices real?
+                    </button>
+                </h3>
+                <div class="accordion-panel" hidden>
+                    <p>
+                        Prices are made to be affordable 
+                        easy access and locatable for the people
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get in Touch</h2>
+                <p>
+                    Have a question about Opal Horizon?
+                </p>
+            </div>
+
+            <div class="contact-actions">
+                <a href="enquiry.html" class="main-button">
+                    Make an Enquiry
+                </a>
+
+                <a href="contact.html" class="main-button">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>© 2026 Opal Horizon. Student Project.</p>
+    </div>
+</footer>
+
+<!-- Hotel details pop-up -->
+<div id="hotelModal" class="modal" hidden>
+    <div class="modal-content">
+        <button type="button" id="closeHotelModal"
+                aria-label="Close hotel details">×</button>
+        <div id="modalBody"></div>
+    </div>
+</div>
+
+<!-- Gallery lightbox -->
+<div id="lightbox" class="lightbox" hidden>
+    <div class="lightbox-content">
+        <button type="button" id="closeLightbox"
+                aria-label="Close gallery">×</button>
+
+        <button type="button" id="lightboxPrev"
+                aria-label="Previous image">❮</button>
+
+        <img id="lightboxImage" alt="Gallery image">
+
+        <button type="button" id="lightboxNext"
+                aria-label="Next image">❯</button>
+
+        <p id="lightboxCaption"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

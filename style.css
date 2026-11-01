@@ -1,0 +1,1344 @@
+
+/* =========================================
+   OPAL HORIZON
+   PART 2 EXTERNAL CSS STYLESHEET
+========================================= */
+
+
+/* =========================================
+   1. CSS RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   2. BASE STYLES
+========================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #243447;
+    background-color: #ffffff;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* =========================================
+   3. COLOUR SCHEME
+========================================= */
+
+/*
+   Dark Blue: #243447
+   Opal Gold: #b99455
+   Light Grey: #f5f7fa
+   White: #ffffff
+   Text Grey: #667085
+*/
+
+
+/* =========================================
+   4. GENERAL LAYOUT
+========================================= */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 70px 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #243447;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 52px;
+    letter-spacing: -1px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #667085;
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   5. HEADER AND NAVIGATION
+========================================= */
+
+.site-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header-content {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 22px;
+    color: #243447;
+    white-space: nowrap;
+}
+
+.logo strong {
+    font-weight: 700;
+}
+
+.logo-symbol {
+    color: #b99455;
+    font-size: 32px;
+}
+
+
+/* Navigation */
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navigation a {
+    color: #667085;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+}
+
+
+/* Pseudo-classes */
+
+.navigation a:hover {
+    color: #b99455;
+}
+
+.navigation a:focus {
+    outline: 2px solid #b99455;
+    outline-offset: 4px;
+}
+
+.navigation a:active {
+    color: #243447;
+}
+
+.navigation a.active {
+    color: #b99455;
+}
+
+
+/* Header button */
+
+.header-button {
+    background-color: #243447;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.header-button:hover {
+    background-color: #b99455;
+}
+
+.header-button:focus {
+    outline: 2px solid #b99455;
+    outline-offset: 3px;
+}
+
+
+/* =========================================
+   6. HERO SECTION
+========================================= */
+
+.hero-section {
+    background-color: #f5f7fa;
+    padding: 80px 0;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 550px;
+}
+
+.hero-text h1 {
+    margin-bottom: 25px;
+}
+
+.hero-text p:not(.small-heading) {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.small-heading {
+    color: #b99455;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 550px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* =========================================
+   7. BUTTON STYLES
+========================================= */
+
+.main-button {
+    display: inline-block;
+    background-color: #b99455;
+    color: #ffffff;
+    border: 2px solid #b99455;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.main-button:hover {
+    background-color: #243447;
+    border-color: #243447;
+}
+
+.main-button:focus {
+    outline: 2px solid #243447;
+    outline-offset: 4px;
+}
+
+.main-button:active {
+    background-color: #172333;
+    border-color: #172333;
+}
+
+
+/* =========================================
+   8. SECTION TITLES
+========================================= */
+
+.section-title {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 45px;
+}
+
+.section-title p:last-child {
+    font-size: 16px;
+}
+
+
+/* =========================================
+   9. BOOKING FORM
+========================================= */
+
+.booking-section {
+    background-color: #ffffff;
+}
+
+.booking-form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 30px;
+    background-color: #f5f7fa;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.form-group label {
+    color: #243447;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #243447;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #b99455;
+    box-shadow: 0 0 0 2px rgba(185, 148, 85, 0.15);
+}
+
+.search-button {
+    background-color: #243447;
+    color: #ffffff;
+    border: 2px solid #243447;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    align-self: end;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #b99455;
+    border-color: #b99455;
+}
+
+.search-button:focus {
+    outline: 2px solid #b99455;
+    outline-offset: 3px;
+}
+
+
+/* =========================================
+   10. FEATURED HOTELS
+========================================= */
+
+.hotels-section {
+    background-color: #f5f7fa;
+}
+
+.hotel-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.hotel-card {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    overflow: hidden;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.hotel-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(36, 52, 71, 0.12);
+}
+
+.hotel-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.hotel-card-content {
+    padding: 25px;
+}
+
+.book-button {
+    display: inline-block;
+    background-color: #0077b6;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.book-button:hover {
+    background-color: #005f8d;
+}
+
+.hotel-location {
+    color: #b99455;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.hotel-card h3 {
+    margin-bottom: 12px;
+}
+
+.hotel-card p:not(.hotel-location) {
+    font-size: 14px;
+}
+
+.hotel-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+    padding-top: 15px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.rating {
+    color: #b99455;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.price {
+    color: #243447;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.card-button {
+    display: inline-block;
+    background-color: #243447;
+    color: #ffffff;
+    padding: 10px 18px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: #b99455;
+}
+
+.card-button:focus {
+    outline: 2px solid #b99455;
+    outline-offset: 3px;
+}
+
+
+/* =========================================
+   11. ABOUT SECTION
+========================================= */
+
+.about-section {
+    background-color: #ffffff;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about-image,
+.about-text {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about-text h2 {
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 15px;
+}
+
+
+/* =========================================
+   12. FEATURES SECTION
+========================================= */
+
+.features-section {
+    background-color: #f5f7fa;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.feature-box {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.feature-box:hover {
+    box-shadow: 0 8px 20px rgba(36, 52, 71, 0.08);
+}
+
+.feature-icon {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.feature-box h3 {
+    font-size: 18px;
+}
+
+.feature-box p {
+    font-size: 14px;
+}
+
+
+/* =========================================
+   13. CONTACT FORM
+========================================= */
+
+.contact-section {
+    background-color: #ffffff;
+}
+
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.contact-form .full-width {
+    grid-column: 1 / -1;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form .main-button {
+    border: none;
+    justify-self: start;
+}
+
+
+/* =========================================
+   14. FOOTER
+========================================= */
+
+.site-footer {
+    background-color: #243447;
+    color: #ffffff;
+    padding-top: 50px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr;
+    gap: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-about h3 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.footer-about p,
+.footer-contact p {
+    color: #d1d5db;
+    font-size: 14px;
+}
+
+.footer-links,
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+    color: #ffffff;
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #d1d5db;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #b99455;
+}
+
+.footer-links a:focus {
+    outline: 2px solid #b99455;
+    outline-offset: 3px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    text-align: center;
+    padding: 20px;
+    color: #d1d5db;
+    font-size: 13px;
+}
+
+
+/* =========================================
+   15. RESPONSIVE DESIGN
+========================================= */
+
+/* Tablet layout */
+
+@media (max-width: 900px) {
+
+    h1 {
+        font-size: 42px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .header-content {
+        flex-wrap: wrap;
+        padding: 15px 0;
+    }
+
+    .navigation ul {
+        gap: 18px;
+    }
+
+    .hero-content {
+        gap: 30px;
+    }
+
+    .hero-image img {
+        height: 300px;
+    }
+
+    .booking-form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hotel-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-content {
+        gap: 30px;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* Mobile layout */
+
+@media (max-width: 600px) {
+
+    section {
+        padding: 50px 0;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .container {
+        width: 92%;
+    }
+
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navigation ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header-button {
+        display: inline-block;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-text p:not(.small-heading) {
+        font-size: 16px;
+    }
+
+    .hero-image {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .hero-image img {
+        height: 250px;
+    }
+
+    .booking-form {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .hotel-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    .about-image img {
+        height: 250px;
+    }
+
+    .contact-form {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form .full-width {
+        grid-column: auto;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =================================
+   OPAL HORIZON FORM STYLING
+================================= */
+
+.form-page {
+    max-width: 750px;
+    margin: 60px auto;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.form-page h1 {
+    color: #172c4b;
+    margin-bottom: 15px;
+}
+
+.form-page p {
+    line-height: 1.7;
+    margin-bottom: 25px;
+    color: #555555;
+}
+
+.form-page form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-page label {
+    font-weight: bold;
+    color: #172c4b;
+}
+
+.form-page input,
+.form-page select,
+.form-page textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 7px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.form-page input:focus,
+.form-page select:focus,
+.form-page textarea:focus {
+    outline: 2px solid #c6a75e;
+    border-color: #c6a75e;
+}
+
+.form-page button {
+    padding: 14px;
+    margin-top: 12px;
+    background: #172c4b;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form-page button:hover {
+    background: #c6a75e;
+    color: #172c4b;
+}
+
+.form-response {
+    margin-top: 25px;
+    padding: 20px;
+    background: #f2f5f8;
+    border-left: 4px solid #c6a75e;
+    border-radius: 7px;
+    line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+    .form-page {
+        margin: 25px 15px;
+        padding: 22px;
+    }
+}
+
+/* ENQUIRY AND CONTACT PAGE STYLING */
+
+.form-page {
+    max-width: 750px;
+    margin: 60px auto;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.form-page h1 {
+    color: #142638;
+    margin-bottom: 15px;
+}
+
+.form-page p {
+    line-height: 1.7;
+    margin-bottom: 25px;
+    color: #555555;
+}
+
+.form-page form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-page label {
+    font-weight: bold;
+    color: #142638;
+}
+
+.form-page input,
+.form-page select,
+.form-page textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 7px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.form-page input:focus,
+.form-page select:focus,
+.form-page textarea:focus {
+    outline: 2px solid #d6b36a;
+    border-color: #d6b36a;
+}
+
+.form-page button {
+    padding: 14px;
+    margin-top: 12px;
+    background: #142638;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form-page button:hover {
+    background: #d6b36a;
+    color: #142638;
+}
+
+.form-response {
+    margin-top: 25px;
+    padding: 20px;
+    background: #f2f5f8;
+    border-left: 4px solid #d6b36a;
+    border-radius: 7px;
+    line-height: 1.7;
+}
+
+.form-response:empty {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .form-page {
+        margin: 25px 15px;
+        padding: 22px;
+    }
+}
+
+
+/* INTERACTIVE HOMEPAGE STYLING */
+
+.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    align-items: center;
+}
+
+.main-nav a {
+    color: #243447;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.main-nav a:hover {
+    color: #b99455;
+}
+
+.menu-toggle {
+    display: none;
+    background: #243447;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-size: 22px;
+}
+
+.hotel-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.hotel-controls input,
+.hotel-controls select,
+.hotel-controls button {
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.hotel-controls input {
+    flex: 2;
+    min-width: 200px;
+}
+
+.hotel-controls button {
+    background: #243447;
+    color: white;
+}
+
+#resultsCount {
+    margin-bottom: 20px;
+}
+
+.hotel-image-wrap {
+    position: relative;
+}
+
+.hotel-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #b99455;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.hotel-content {
+    padding: 22px;
+}
+
+.hotel-title-row,
+.hotel-footer,
+.hotel-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.hotel-description {
+    margin: 12px 0;
+}
+
+.amenities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.amenities span {
+    background: #f5f7fa;
+    padding: 5px 9px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.small-button {
+    display: inline-block;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 6px;
+    background: #243447;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.small-button.primary {
+    background: #b99455;
+}
+
+.tabs,
+.contact-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.tab-button {
+    padding: 12px 22px;
+    border: 1px solid #b99455;
+    background: white;
+    border-radius: 6px;
+}
+
+.tab-button.active {
+    background: #243447;
+    color: white;
+}
+
+.tab-panel {
+    text-align: center;
+    padding: 30px;
+    background: #f5f7fa;
+    border-radius: 10px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-item {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.faq-item {
+    margin: 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.accordion-trigger {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    background: #f5f7fa;
+    color: #243447;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.accordion-panel {
+    padding: 18px;
+}
+
+.modal,
+.lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.8);
+    overflow-y: auto;
+    padding: 30px 15px;
+}
+
+.modal[hidden],
+.lightbox[hidden],
+[hidden] {
+    display: none !important;
+}
+
+.modal-content,
+.lightbox-content {
+    max-width: 750px;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.modal-content > button,
+.lightbox-content > button {
+    padding: 10px 15px;
+    margin: 5px;
+    background: #243447;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+.modal-map {
+    display: block;
+    width: 100%;
+    height: 320px;
+    border: 0;
+    margin: 20px 0;
+}
+
+.modal-actions {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.button-gold {
+    background: #b99455;
+    color: white;
+}
+
+.button-navy {
+    background: #243447;
+    color: white;
+}
+
+.lightbox-content {
+    text-align: center;
+}
+
+.lightbox-content img {
+    display: block;
+    max-width: 100%;
+    max-height: 65vh;
+    margin: 15px auto;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .main-nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-nav.open {
+        display: flex;
+    }
+
+    .header-content {
+        flex-wrap: wrap;
+    }
+
+    .hotel-grid,
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content {
+        flex-direction: column;
+    }
+}
+
+/* Form validation messages */
+
+.field-error {
+    display: block;
+    color: #c62828;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.form-page input:invalid:not(:placeholder-shown) {
+    border-color: #c62828;
+}
+
+.form-response {
+    margin-top: 20px;
+    padding: 12px;
+    white-space: pre-line;
+}
+
+
+/* Form submission feedback */
+
+.form-response {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f5f7fa;
+    white-space: pre-line;
+    font-weight: 500;
+}
+
+.form-response:empty {
+    display: none;
+}
+
+.form-page button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

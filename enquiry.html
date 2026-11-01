@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hotel Enquiry | Opal Horizon</title>
+
+    <meta name="description"
+          content="Send a hotel accommodation enquiry to Opal Horizon.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main class="form-page">
+
+    <h1>Hotel Enquiry</h1>
+
+    <p>
+        Complete the form below to calculate an estimated cost for your selected hotel.
+    </p>
+
+    <form id="enquiryForm" action="submit-enquiry" method="POST">
+
+        <label for="enquiryName">Full Name:</label>
+        <input type="text" id="enquiryName"
+               name="name" required minlength="2">
+
+        <label for="enquiryEmail">Email Address:</label>
+        <input type="email" id="enquiryEmail"
+               name="email" required>
+
+        <label for="enquiryHotel">Choose a Hotel:</label>
+        <select id="enquiryHotel" name="hotel" required>
+            <option value="">Select a hotel</option>
+            <option value="Opal Bay Hotel">Opal Bay Hotel</option>
+            <option value="Horizon Grand">Horizon Grand</option>
+            <option value="Opal Sands Resort">Opal Sands Resort</option>
+            <option value="Horizon Gardens">Horizon Gardens</option>
+            <option value="Opal Valley Lodge">Opal Valley Lodge</option>
+            <option value="Ocean Horizon Hotel">Ocean Horizon Hotel</option>
+            <option value="Opal Central Hotel">Opal Central Hotel</option>
+            <option value="Horizon Forest Lodge">Horizon Forest Lodge</option>
+            <option value="Opal City Suites">Opal City Suites</option>
+        </select>
+
+        <label for="checkIn">Check-in Date:</label>
+        <input type="date" id="checkIn"
+               name="checkIn" required>
+
+        <label for="checkOut">Check-out Date:</label>
+        <input type="date" id="checkOut"
+               name="checkOut" required>
+
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests"
+               name="guests" min="1" max="10"
+               value="1" required>
+
+        <label for="enquiryMessage">Additional Information:</label>
+        <textarea id="enquiryMessage"
+                  name="message"
+                  rows="5"
+                  placeholder="Tell us about any special requests..."></textarea>
+
+        <button type="submit">Submit Enquiry</button>
+
+    </form>
+
+    <div id="enquiryResponse"
+         class="form-response"
+         aria-live="polite"></div>
+
+</main>
+
+<script src="forms.js"></script>
+
+</body>
+</html>

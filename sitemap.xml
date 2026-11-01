@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Opal Horizon Homepage -->
+    <url>
+        <loc>https://www.opalhorizon.co.za/</loc>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Hotel Enquiry Page -->
+    <url>
+        <loc>https://www.opalhorizon.co.za/enquiry.html</loc>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Contact Page -->
+    <url>
+        <loc>https://www.opalhorizon.co.za/contact.html</loc>
+        <priority>0.8</priority>
+    </url>
+
+</urlset>
